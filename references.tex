@@ -1,0 +1,23 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{csquotes}
+\usepackage[sorting=nyt,style=apa,backend=biber]{biblatex}
+
+\DeclareLanguageMapping{swedish}{swedish-apa}
+
+\DefineBibliographyStrings{swedish}{
+    references = {Referenser},
+    bibliography={Referenser},
+}
+
+\addbibresource{rkh-bib.bib}
+
+\begin{document}
+
+\nocite{*}
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
